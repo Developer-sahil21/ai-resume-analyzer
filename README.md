@@ -233,12 +233,6 @@ Contributions are welcome! Here's how to help:
 
 ---
 
-## License
-
-This project is licensed under the MIT License — see the LICENSE file for details.
-
----
-
 ## Feedback & Support
 
 Have questions or found a bug? Open an issue on [GitHub Issues](https://github.com/Developer-sahil21/ai-resume-analyzer/issues).
