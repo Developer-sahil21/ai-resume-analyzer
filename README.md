@@ -167,8 +167,81 @@ Edit `ats_breakdown()` in `modules/similarity_scorer.py` — adjust the 0.5/0.5 
 
 ---
 
-## Limitations
+## API Endpoints
+
+| Method | Endpoint       | Description                                  |
+| ------ | -------------- | -------------------------------------------- |
+| POST   | `/api/analyze` | Submit resume and JD for matching & analysis |
+| GET    | `/`            | Serve the web interface                      |
+
+### POST /api/analyze
+
+**Request Body:**
+
+```json
+{
+  "resume_text": "...",
+  "job_description": "..."
+}
+```
+
+**Response:**
+
+```json
+{
+  "overall_score": 72,
+  "semantic_similarity": 0.68,
+  "keyword_coverage": 0.76,
+  "matched_skills": ["python", "flask", "sql"],
+  "missing_skills": ["kubernetes", "deep learning"],
+  "extra_skills": ["docker"],
+  "suggestions": [...]
+}
+```
+
+---
+
+## Features
+
+✅ **Multi-format Resume Support** — PDF, TXT, DOCX  
+✅ **Smart Skill Extraction** — Hybrid NLP + keyword bank approach  
+✅ **ATS-Score Calculation** — Semantic + keyword-based matching  
+✅ **Actionable Suggestions** — Improvement tips with bullet templates  
+✅ **Clean Web Interface** — Responsive, no JS framework bloat  
+✅ **Fast Processing** — Scores generated in <2 seconds
+
+---
+
+## Limitations & Known Issues
 
 - Scanned/image PDFs are not supported (text PDFs only)
 - Skill extraction is English-only
 - Bullet suggestions are templates — always customise with real numbers
+- Large resumes (>50 pages) may have reduced accuracy
+
+---
+
+## Contributing
+
+Contributions are welcome! Here's how to help:
+
+1. **Fork** the repository
+2. **Create a feature branch**: `git checkout -b feature/your-feature`
+3. **Commit changes**: `git commit -m 'Add your feature'`
+4. **Push to branch**: `git push origin feature/your-feature`
+5. **Open a Pull Request**
+
+---
+
+## License
+
+This project is licensed under the MIT License — see the LICENSE file for details.
+
+---
+
+## Feedback & Support
+
+Have questions or found a bug? Open an issue on [GitHub Issues](https://github.com/Developer-sahil21/ai-resume-analyzer/issues).
+
+**Maintained by:** [Sahil Khan](https://github.com/Developer-sahil21)  
+**Last Updated:** March 2026
