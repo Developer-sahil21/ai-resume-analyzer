@@ -243,5 +243,5 @@ This project is licensed under the MIT License — see the LICENSE file for deta
 
 Have questions or found a bug? Open an issue on [GitHub Issues](https://github.com/Developer-sahil21/ai-resume-analyzer/issues).
 
-**Maintained by:** [Sahil Khan](https://github.com/Developer-sahil21)  
+**Maintained by:** [Mohammad Sahil Khan](https://github.com/Developer-sahil21)  
 **Last Updated:** March 2026
